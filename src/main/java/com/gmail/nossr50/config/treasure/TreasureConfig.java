@@ -238,7 +238,7 @@ public class TreasureConfig extends ConfigLoader {
              */
             ItemStack item = null;
 
-            if (materialName.contains("POTION")) {
+            if (materialName.contains("POTION") && materialName.length()>7) {
                 String potionType = materialName.substring(7);
 
                 try {
